@@ -1,7 +1,2 @@
-MMM/
-
-MMM2/
-
-MMM3/
-
-MMMenv/
+.venv/
+__pycache__/
