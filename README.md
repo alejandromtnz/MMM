@@ -1,29 +1,47 @@
-# MMM: Media Mix Modeling y Predicción de Campañas
+# MMM — Media Mix Modeling and Campaign Prediction
 
-**Autor:** Alejandro Martínez Ronda  
-**Repositorio:**  
-- **Usuario GitHub:** [alejandromtnz](https://github.com/alejandromtnz)  
-- **Link repositorio:** [GitHub](https://github.com/alejandromtnz/MMM)
+**Media Mix Modeling (MMM)** project: a statistical approach to measure the impact
+of different marketing channels on sales/conversions. It combines **SARIMA** time
+-series modelling with **optimisation** techniques to analyse campaign data and
+predict and improve future performance.
 
-## Descripción
+## Overview
 
-Este proyecto se centra en **Media Mix Modeling (MMM)**, una técnica estadística usada para evaluar el impacto de diferentes canales de marketing en las ventas o conversiones. A través de modelos como **SARIMA** y técnicas de **optimización**, se analizan datos combinados de campañas para predecir y mejorar el rendimiento futuro.
+The project evaluates the effectiveness of different advertising media and
+predicts the expected return under different budget allocations, using
+statistical modelling and forecasting tools.
 
-## Contenido del Repositorio
+## Repository structure
 
-- `sarima.ipynb`: Implementación del modelo SARIMA para series temporales.
-- `optimizacion.ipynb`: Notebook enfocado en encontrar el mix óptimo de inversión en medios mediante uso de arboles de decision (versión caja negra).
-- `ggerger.ipynb`:  Notebook enfocado en encontrar el mix óptimo de inversión en medios mediante uso de regresiones lineales (**versión mejorada**). Análisis adicional de validación.
-- `datos_combinados.csv`: Dataset consolidado con métricas de marketing y resultados.
-- `README.md`: Este archivo.
+```
+.
+├── sarima.ipynb                 # SARIMA model for the time series
+├── optimizacion.ipynb           # Optimal media-mix allocation via decision trees (black-box version)
+├── optimizacion_regresion.ipynb # Optimal media-mix allocation via linear regression (improved version) + validation
+├── datos_combinados.csv         # Consolidated dataset (marketing metrics and results)
+└── README.md
+```
 
-## Tecnologías Utilizadas
+## Tech stack
 
-- Python (pmdarima, statsmodels, pandas, numpy)
-- SARIMA (Seasonal ARIMA)
-- Optimización no lineal
+Python (pmdarima, statsmodels, pandas, numpy) · SARIMA (Seasonal ARIMA) ·
+non-linear optimisation
 
-## Objetivo
+## Goal
 
-Evaluar la eficacia de los distintos medios publicitarios y predecir el retorno esperado según diferentes asignaciones de presupuesto, utilizando modelado estadístico y herramientas de predicción.
+Assess the efficiency of each advertising medium and predict the expected return
+for different budget allocations, combining statistical modelling with
+optimisation.
 
+## Usage
+
+```bash
+jupyter lab
+```
+
+Run `sarima.ipynb` for the time-series model, then `optimizacion.ipynb` /
+`optimizacion_regresion.ipynb` for the budget-allocation analysis.
+
+---
+
+> **Note:** notebook comments are written in Spanish.
